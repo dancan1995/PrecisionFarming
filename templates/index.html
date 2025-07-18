@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Precision Agriculture with Machine Learning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: url('/static/images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #1b1b1b;
+      position: relative;
+      z-index: 1;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: inherit;
+      backdrop-filter: blur(6px);
+      z-index: -1;
+    }
+
+    header, section, footer {
+      background: rgba(245, 245, 245, 0.9);
+      border-radius: 10px;
+      margin: 2rem auto;
+      padding: 2.5rem;
+      max-width: 1000px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header {
+      background: rgba(0, 77, 64, 0.9);
+      color: #fffbe6;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    p, li {
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    .team-member {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1.5rem;
+      border: 3px solid #2e7d32;
+    }
+
+    blockquote {
+      background: #f1f8e9;
+      border-left: 5px solid #33691e;
+      padding: 1rem 1.5rem;
+      font-style: italic;
+      color: #33691e;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .feature {
+      flex: 1 1 45%;
+      background: #f9fbe7;
+      border-left: 5px solid #8bc34a;
+      padding: 1rem;
+      border-radius: 8px;
+      color: #1b1b1b;
+    }
+
+    .feature i {
+      font-size: 1.4rem;
+      margin-right: 0.5rem;
+      color: #689f38;
+    }
+
+    footer {
+      background: rgba(29, 189, 162, 0.9);
+      color: black;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Beyond Surveys: A Machine Learning Approach to Understanding Precision Agriculture Adoption in the U.S.</h1>
+</header>
+
+<section>
+  <h2>Abstract</h2>
+  <p>
+    This study introduces a semi-automated, data-driven framework to analyze and compare the adoption of precision agriculture
+    technologies across U.S. states. By leveraging historical data and unsupervised machine learning, we identify trends in technological
+    adoption and their relationship to crop productivity and sales.
+  </p>
+  <blockquote>
+    “Our approach validates USDA surveys using empirical growth data — a step toward transparent, evidence-based agricultural analytics.”
+  </blockquote>
+</section>
+
+<section>
+  <h2>Project Goals</h2>
+  <div class="features">
+    <div class="feature"><i class="fa-solid fa-chart-line"></i> Use clustering to detect economic and tech performance patterns.</div>
+    <div class="feature"><i class="fa-solid fa-database"></i> Normalize historical datasets for fair cross-state comparison.</div>
+    <div class="feature"><i class="fa-solid fa-tractor"></i> Highlight how precision tools relate to yield improvement.</div>
+    <div class="feature"><i class="fa-solid fa-lightbulb"></i> Provide data-driven insights to help shape policy and training.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Top Crops in Michigan (2022)</h2>
+  <ul>
+    <li><strong>Corn:</strong> $1.5B</li>
+    <li><strong>Soybeans:</strong> $1.5B</li>
+    <li><strong>Hay & Haylage:</strong> $608M</li>
+    <li><strong>Wheat:</strong> $281.2M</li>
+    <li><strong>Potatoes:</strong> $230.5M</li>
+    <li><strong>Apples:</strong> $213.3M</li>
+    <li><strong>Blueberries:</strong> $85.2M</li>
+    <li><strong>Cherries:</strong> $58M</li>
+    <li><strong>Cucumbers:</strong> $52.5M</li>
+    <li><strong>Squash:</strong> $40.2M</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Michigan in Cluster Analysis</h2>
+  <p>
+    Our clustering algorithm placed Michigan in Cluster 4 — a group defined by:
+  </p>
+  <ul>
+    <li>Consistent but moderate economic growth</li>
+    <li>Early adoption of tech but not full saturation</li>
+    <li>Mid-tier yield improvements</li>
+  </ul>
+  <p>
+    This cluster reveals opportunities for targeted investment and support in infrastructure and farmer education.
+  </p>
+</section>
+
+<section>
+  <h2>Meet the Team</h2>
+  <div class="team-member">
+    <img src="/static/images/kamrul.jpg" alt="Kamrul Hasan">
+    <div>
+      <h3>Kamrul Hasan, PhD</h3>
+      <p>“I believe our work will significantly improve sustainable agricultural practices across USA.”</p>
+    </div>
+  </div>
+  <div class="team-member">
+    <img src="/static/images/dancun.jpg" alt="Dancun Juma">
+    <div>
+      <h3>Dancun Juma, MSc</h3>
+      <p>“This project provides real-world insights into tech adoption in agriculture. I’m proud to be part of it.”</p>
+    </div>
+  </div>
+  <div class="team-member">
+    <img src="/static/images/emily.jpg" alt="Emily Zhang">
+    <div>
+      <h3>Emily Zhang</h3>
+      <p>“Clustering analysis gave me a deeper understanding of how agriculture varies state to state.”</p>
+    </div>
+  </div>
+  <div class="team-member">
+    <img src="/static/images/jamal.jpg" alt="Jamal Peterson">
+    <div>
+      <h3>Jamal Peterson</h3>
+      <p>“Precision farming can revolutionize our food systems — our study shows where we can act.”</p>
+    </div>
+  </div>
+  <div class="team-member">
+    <img src="/static/images/sarah.jpg" alt="Sarah Alvarez">
+    <div>
+      <h3>Sarah Alvarez</h3>
+      <p>“I enjoyed visualizing the data — now others can understand its impact too.”</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Challenges in U.S. Agriculture</h2>
+  <ul>
+    <li>Climate variability and extreme weather</li>
+    <li>Water scarcity and irrigation limitations</li>
+    <li>Labor shortages and aging workforce</li>
+    <li>Economic constraints on smaller farms</li>
+    <li>Complexity of tech adoption in rural areas</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Future Directions</h2>
+  <ol>
+    <li>Use satellite and drone imagery to monitor crop health</li>
+    <li>Create incentives for underperforming states to adopt tech</li>
+    <li>Partner with agri-tech startups to scale innovation</li>
+    <li>Support open-access agricultural data sharing</li>
+    <li>Promote equity in rural agricultural advancement</li>
+  </ol>
+</section>
+
+<footer>
+  <p>&copy; 2025 USA Precision Agriculture Project — GVSU</p>
+</footer>
+
+</body>
+</html>
