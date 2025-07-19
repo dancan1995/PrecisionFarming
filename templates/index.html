@@ -10,7 +10,7 @@
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
-      background: url('https://github.com/dancan1995/PrecisionFarming/blob/main/static/images/background.jpg') no-repeat center center fixed;
+      background: url('{{ url_for('static', filename='images/background.jpg') }}') no-repeat center center fixed;
       background-size: cover;
       color: #1b1b1b;
       position: relative;
@@ -27,12 +27,12 @@
     }
 
     header, section, footer {
-      background: rgba(245, 245, 245, 0.9);
+      background: rgba(245, 245, 245, 0.93);
       border-radius: 10px;
       margin: 2rem auto;
       padding: 2.5rem;
       max-width: 1000px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     header {
@@ -176,35 +176,35 @@
 <section>
   <h2>Meet the Team</h2>
   <div class="team-member">
-    <img src="https://github.com/dancan1995/PrecisionFarming/blob/main/static/images/kamrul.jpg" alt="Kamrul Hasan">
+    <img src="{{ url_for('static', filename='images/kamrul.jpg') }}" alt="Kamrul Hasan">
     <div>
       <h3>Kamrul Hasan, PhD</h3>
       <p>“I believe our work will significantly improve sustainable agricultural practices across USA.”</p>
     </div>
   </div>
   <div class="team-member">
-    <img src="https://github.com/dancan1995/PrecisionFarming/blob/main/static/images/dancun.jpg" alt="Dancun Juma">
+    <img src="{{ url_for('static', filename='images/dancun.jpg') }}" alt="Dancun Juma">
     <div>
       <h3>Dancun Juma, MSc</h3>
       <p>“This project provides real-world insights into tech adoption in agriculture. I’m proud to be part of it.”</p>
     </div>
   </div>
   <div class="team-member">
-    <img src="https://github.com/dancan1995/PrecisionFarming/blob/main/static/images/emily.jpg" alt="Emily Zhang">
+    <img src="{{ url_for('static', filename='images/emily.jpg') }}" alt="Emily Zhang">
     <div>
       <h3>Emily Zhang</h3>
       <p>“Clustering analysis gave me a deeper understanding of how agriculture varies state to state.”</p>
     </div>
   </div>
   <div class="team-member">
-    <img src="https://github.com/dancan1995/PrecisionFarming/blob/main/static/images/jamal.jpg" alt="Jamal Peterson">
+    <img src="{{ url_for('static', filename='images/jamal.jpg') }}" alt="Jamal Peterson">
     <div>
       <h3>Jamal Peterson</h3>
       <p>“Precision farming can revolutionize our food systems — our study shows where we can act.”</p>
     </div>
   </div>
   <div class="team-member">
-    <img src="https://github.com/dancan1995/PrecisionFarming/blob/main/static/images/sarah.jpg" alt="Sarah Alvarez">
+    <img src="{{ url_for('static', filename='images/sarah.jpg') }}" alt="Sarah Alvarez">
     <div>
       <h3>Sarah Alvarez</h3>
       <p>“I enjoyed visualizing the data — now others can understand its impact too.”</p>
